@@ -32,7 +32,7 @@ struct aligned_unsigned {
     alignas(CACHE_LINE) unsigned value;
 };
 
-double randomize(unsigned *V, unsigned N, unsigned mina, unsigned maxa) {
+double randomize(unsigned *V, size_t N, unsigned mina, unsigned maxa) {
     unsigned T = get_num_threads();
     std::vector<unsigned> multipliers = get_A(T);
     double median = 0.0;

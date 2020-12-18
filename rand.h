@@ -1,3 +1,3 @@
 #pragma once
 
-double randomize(unsigned* V, unsigned N, unsigned min, unsigned max);
+double randomize(unsigned* V, size_t N, unsigned min, unsigned max);
